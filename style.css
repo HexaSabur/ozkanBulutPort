@@ -150,6 +150,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav-link {
   position: relative;
+  z-index: 1;
   padding: 7px 14px;
   border-radius: 999px;
   font-size: 14px;
@@ -162,6 +163,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute;
   inset: 0;
+  z-index: -1;
   border-radius: 999px;
   background: var(--bg-tint);
   opacity: 0;
@@ -169,7 +171,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: opacity var(--trans), transform 400ms var(--ease-out);
 }
 .nav-link:hover {
-  color: var(--fg);
+  color: var(--accent);
   transform: translateY(-1px);
 }
 .nav-link:hover::before { opacity: 1; transform: scaleX(1); }
