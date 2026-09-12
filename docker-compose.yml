@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  ozkan-portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ozkan-bulut-portfolio
+    ports:
+      - "3838:80"
+    restart: unless-stopped
