@@ -150,31 +150,20 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav-link {
   position: relative;
-  z-index: 1;
-  padding: 7px 14px;
+  padding: 7px 16px;
   border-radius: 999px;
   font-size: 14px;
   font-weight: 600;
   color: var(--fg-muted);
   letter-spacing: -0.01em;
-  transition: color var(--trans), background var(--trans), transform var(--trans);
-}
-.nav-link::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: 999px;
-  background: var(--bg-tint);
-  opacity: 0;
-  transform: scaleX(0.8);
-  transition: opacity var(--trans), transform 400ms var(--ease-out);
+  background: transparent;
+  transition: color var(--trans), background-color var(--trans), transform var(--trans);
 }
 .nav-link:hover {
-  color: var(--accent);
+  color: var(--accent) !important;
+  background-color: var(--bg-tint);
   transform: translateY(-1px);
 }
-.nav-link:hover::before { opacity: 1; transform: scaleX(1); }
 
 /* Nav CTAs */
 .nav-ctas { display: flex; align-items: center; gap: 8px; }
