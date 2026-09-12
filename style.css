@@ -351,8 +351,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-bottom: 28px;
 }
 .hero-avatar-ring {
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   padding: 3px;
   background: linear-gradient(135deg, var(--accent), #ffaa44);
@@ -369,7 +369,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 20%;
   border: 3px solid white;
   display: block;
 }
